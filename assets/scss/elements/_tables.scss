@@ -1,0 +1,128 @@
+/*----------------------------------------
+  30. Tables
+----------------------------------------*/
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  line-height: 1.8;
+  border-color: $border-color;
+}
+
+.table-sm > tbody > tr > td,
+.table-sm > tbody > tr > th,
+.table-sm > tfoot > tr > td,
+.table-sm > tfoot > tr > th,
+.table-sm > thead > tr > td,
+.table-sm > thead > tr > th {
+  padding: 7.5px;
+}
+
+.table-lg > tbody > tr > td,
+.table-lg > tbody > tr > th,
+.table-lg > tfoot > tr > td,
+.table-lg > tfoot > tr > th,
+.table-lg > thead > tr > td,
+.table-lg > thead > tr > th {
+  padding: 15px;
+}
+
+.table-xl > tbody > tr > td,
+.table-xl > tbody > tr > th,
+.table-xl > tfoot > tr > td,
+.table-xl > tfoot > tr > th,
+.table-xl > thead > tr > td,
+.table-xl > thead > tr > th {
+  padding: 20px;
+}
+
+.table-striped {
+  > tbody {
+    > tr {
+      &:nth-of-type(odd) {
+        background-color: lighten($default-gray, 0.5%);
+      }
+    }
+  }
+}
+
+.table-hover {
+  > tbody {
+    > tr {
+      &:hover {
+        background-color: $default-gray;
+      }
+    }
+  }
+}
+
+.table-bordered {
+  border: 1px solid $border-color;
+}
+
+.table {
+  @media (max-width: 981px) {
+    width: 800px;
+    min-width: 800px;
+  }
+  > thead {
+    > tr {
+      > th {
+        color: darken($default-text-color, 10%);
+        border-bottom: 1px solid $border-color;
+        border-top: 0;
+      }
+    }
+  }
+  .table-media img {
+    width: 80px;
+    height: auto;
+    border-radius: 25px 0 25px 0;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 80px;
+  }
+  .table-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0 25px 0;
+    background: $gray2;
+    i {
+      font-size: 24px;
+    }
+  }
+  .thead-dark th {
+    background-color: $default-dark;
+    border-color: $default-dark;
+  }
+
+  .thead-light th {
+    background-color: $default-gray;
+    border-color: $border-color;
+    color: darken($default-text-color, 10%);
+  }
+
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  tr {
+    &.selected {
+      background-color: $default-gray;
+    }
+  }
+}
+
+.table-overflow {
+  @include screen-tablet {
+    width: 100%;
+    overflow-x: auto;
+  }
+}

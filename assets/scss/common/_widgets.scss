@@ -1,0 +1,33 @@
+/*----------------------------------------
+  9. Widgets
+----------------------------------------*/
+
+.widget-credit-card {
+  max-width: 430px;
+}
+
+.form-group {
+  .form-control {
+    border-radius: 10px 0px 10px 0;
+    background: $gray1;
+    border: 1px solid $gray2;
+    &::placeholder {
+      color: $gray3;
+    }
+  }
+}
+
+.dropzone.dz-clickable {
+  background: $gray1;
+  border: dashed 2px #b8b8b8;
+  display: flex;
+  width: 100%;
+  min-width: 138px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0 10px 0;
+  i {
+    font-size: 55px;
+    color: $gray4;
+  }
+}

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>YallaPMP Admin</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/logo/apple-touch-icon.png"
+    />
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+
+    <!-- core dependcies css -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"
+    />
+
+    <!-- page css -->
+    <link
+      href="assets/vendor/selectize/dist/css/selectize.default.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/sweetalert/lib/sweet-alert.css"
+      rel="stylesheet"
+    />
+    <!-- core css -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/remixicon.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="layout">
+        <!-- Header START -->
+        <div class="header navbar">
+          <div class="header-container">
+            <div class="nav-logo">
+              <a href="index.html">
+                <img src="assets/images/logo/logo.png" class="logo logo-lg" />
+                <img
+                  src="assets/images/logo/logo-sm.png"
+                  class="logo logo-sm"
+                />
+              </a>
+            </div>
+            <ul class="nav-left">
+              <li>
+                <a class="sidenav-fold-toggler" href="javascript:void(0);">
+                  <i class="ri-menu-unfold-line"></i>
+                </a>
+                <a class="sidenav-expand-toggler" href="javascript:void(0);">
+                  <i class="ri-menu-fold-line"></i>
+                </a>
+              </li>
+              <li class="search-box">
+                <a class="search-toggle" href="javascript:void(0);">
+                  <i class="search-icon mdi mdi-magnify"></i>
+                  <i class="search-icon-close mdi mdi-close-circle-outline"></i>
+                </a>
+              </li>
+              <li class="search-input">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Type to search..."
+                />
+                <div class="search-predict">
+                  <div
+                    class="
+                      search-wrapper
+                      scrollable
+                      ps-container ps-theme-default
+                    "
+                    data-ps-id="25488e79-497a-2d19-fd49-ad4f0e2ef699"
+                  >
+                    <div class="p-v-10">
+                      <span class="display-block m-v-5 p-h-20 text-gray">
+                        <i class="ti-file p-r-5"></i>
+                        <span>Files</span>
+                      </span>
+                      <ul class="list-media">
+                        <li class="list-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="media-hover p-h-20"
+                          >
+                            <div class="media-img">
+                              <div class="icon-avatar bg-success">
+                                <i class="mdi mdi-file-outline"></i>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <span class="title p-t-10">Document.xls</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="media-hover p-h-20"
+                          >
+                            <div class="media-img">
+                              <div class="icon-avatar bg-info">
+                                <i class="mdi mdi-file-outline"></i>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <span class="title p-t-10">Mockup.doc</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="media-hover p-h-20"
+                          >
+                            <div class="media-img">
+                              <div class="icon-avatar bg-danger">
+                                <i class="mdi mdi-file-outline"></i>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <span class="title p-t-10">Document.pdf</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="m-h-20 border top"></div>
+                    <div class="p-v-10">
+                      <span class="display-block m-v-5 p-h-20 text-gray">
+                        <i class="ti-user p-r-5"></i>
+                        <span>Members</span>
+                      </span>
+                      <ul class="list-media">
+                        <li class="list-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="conversation-toggler media-hover p-h-20"
+                          >
+                            <div class="media-img">
+                              <img
+                                src="assets/images/avatars/thumb-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="info">
+                              <span class="title p-t-10">Debra Stewart</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="conversation-toggler media-hover p-h-20"
+                          >
+                            <div class="media-img">
+                              <img
+                                src="assets/images/avatars/thumb-5.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="info">
+                              <span class="title p-t-10">Jane Hunt</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="ps-scrollbar-x-rail"
+                      style="left: 0px; bottom: 0px"
+                    >
+                      <div
+                        class="ps-scrollbar-x"
+                        tabindex="0"
+                        style="left: 0px; width: 0px"
+                      ></div>
+                    </div>
+                    <div
+                      class="ps-scrollbar-y-rail"
+                      style="top: 0px; right: 0px"
+                    >
+                      <div
+                        class="ps-scrollbar-y"
+                        tabindex="0"
+                        style="top: 0px; height: 0px"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="search-footer">
+                    <span
+                      >You are Searching for '<b class="text-dark"
+                        ><span class="serach-text-bind"></span></b
+                      >'</span
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav-right">
+              <li class="notifications dropdown dropdown-animated scale-left">
+                <span class="counter">2</span>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="border-radius-round circle">
+                    <i class="mdi mdi-bell-ring-outline"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu dropdown-lg p-v-0">
+                  <li class="p-v-15 p-h-20 border bottom text-dark">
+                    <h5 class="m-b-0">
+                      <i class="mdi mdi-bell-ring-outline p-r-10"></i>
+                      <span>Notifications</span>
+                    </h5>
+                  </li>
+                  <li>
+                    <ul
+                      class="
+                        list-media
+                        hello
+                        overflow-y-auto
+                        relative
+                        scrollable
+                        ps-container ps-theme-default
+                      "
+                      style="max-height: 300px"
+                      data-ps-id="13e442b8-9c0a-0a7b-382c-b42048f08bbd"
+                    >
+                      <li class="list-item border bottom">
+                        <a href="javascript:void(0);" class="media-hover p-15">
+                          <div class="media-img">
+                            <div class="icon-avatar bg-primary">
+                              <i class="ti-settings"></i>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <span class="title"> System shutdown </span>
+                            <span class="sub-title">8 min ago</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="list-item border bottom">
+                        <a href="javascript:void(0);" class="media-hover p-15">
+                          <div class="media-img">
+                            <div class="icon-avatar bg-success">
+                              <i class="ti-user"></i>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <span class="title"> New User Registered </span>
+                            <span class="sub-title">12 min ago</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="list-item border bottom">
+                        <a href="javascript:void(0);" class="media-hover p-15">
+                          <div class="media-img">
+                            <div class="icon-avatar bg-warning">
+                              <i class="ti-file"></i>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <span class="title"> New Attacthemnet </span>
+                            <span class="sub-title">12 min ago</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="list-item border bottom">
+                        <a href="javascript:void(0);" class="media-hover p-15">
+                          <div class="media-img">
+                            <div class="icon-avatar bg-info">
+                              <i class="ti-shopping-cart"></i>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <span class="title"> New Order Received </span>
+                            <span class="sub-title">12 min ago</span>
+                          </div>
+                        </a>
+                      </li>
+                      <div
+                        class="ps-scrollbar-x-rail"
+                        style="left: 0px; bottom: 0px"
+                      >
+                        <div
+                          class="ps-scrollbar-x"
+                          tabindex="0"
+                          style="left: 0px; width: 0px"
+                        ></div>
+                      </div>
+                      <div
+                        class="ps-scrollbar-y-rail"
+                        style="top: 0px; right: 0px"
+                      >
+                        <div
+                          class="ps-scrollbar-y"
+                          tabindex="0"
+                          style="top: 0px; height: 0px"
+                        ></div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="p-v-15 p-h-20 text-center">
+                    <span>
+                      <a href="" class="text-gray"
+                        >Check all notifications
+                        <i class="ei-right-chevron p-l-5 font-size-10"></i
+                      ></a>
+                    </span>
+                  </li>
+                </ul>
+              </li>
+              <li class="user-profile dropdown dropdown-animated scale-left">
+                <a
+                  href=""
+                  class="dropdown-toggle d-flex align-items-center"
+                  data-toggle="dropdown"
+                >
+                  <img
+                    class="profile-img img-fluid m-r-10 m-t-0 border-radius-8"
+                    src="assets/images/avatars/thumb-13.jpg"
+                    alt=""
+                  />
+                  <div class="mobile-hidden">
+                    <h3 class="font-size-16 text-semibold m-b-0">
+                      ahmed kamal
+                    </h3>
+                    <p class="font-size-14 text-gray m-b-0">member</p>
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-md p-v-0">
+                  <li>
+                    <ul class="list-media">
+                      <li class="list-item p-15">
+                        <div class="media-img">
+                          <img
+                            src="assets/images/avatars/thumb-13.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="info">
+                          <span class="title text-semibold"
+                            >Marshall Nichols</span
+                          >
+                          <span class="sub-title">UI/UX Desinger</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="">
+                      <i class="ti-power-off p-r-10"></i>
+                      <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Header END -->
+
+        <!-- Side Nav START -->
+        <div class="side-nav expand-lg">
+          <div class="side-nav-inner">
+            <ul class="side-nav-menu scrollable">
+              <li class="nav-item">
+                <a href="index.html">
+                  <span class="icon-holder">
+                    <i class="ri-dashboard-line"></i>
+                  </span>
+                  <span class="title">Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="home-slider.html">
+                  <span class="icon-holder">
+                    <i class="ri-equalizer-line"></i>
+                  </span>
+                  <span class="title">Home slider</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="we-offer.html">
+                  <span class="icon-holder">
+                    <i class="ri-gift-line"></i>
+                  </span>
+                  <span class="title">What We Offer</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="yala-pmp.html">
+                  <span class="icon-holder">
+                    <i class="ri-lightbulb-line"></i>
+                  </span>
+                  <span class="title">YALLA PMP</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="fawazir.html">
+                  <span class="icon-holder">
+                    <i class="ri-video-line"></i>
+                  </span>
+                  <span class="title">Yallapmp Fawazi</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="suggested-courses.html">
+                  <span class="icon-holder">
+                    <i class="ri-book-2-line"></i>
+                  </span>
+                  <span class="title">Suggested Courses</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a href="success-board.html">
+                  <span class="icon-holder">
+                    <i class="ri-bar-chart-box-line"></i>
+                  </span>
+                  <span class="title">Success Board</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html">
+                  <span class="icon-holder">
+                    <i class="ri-pen-nib-line"></i>
+                  </span>
+                  <span class="title">illustration login</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html">
+                  <span class="icon-holder">
+                    <i class="ri-article-line"></i>
+                  </span>
+                  <span class="title">Blog</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="courses.html">
+                  <span class="icon-holder">
+                    <i class="ri-play-list-2-line"></i>
+                  </span>
+                  <span class="title">Courses</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="views.html">
+                  <span class="icon-holder">
+                    <i class="ri-eye-line"></i>
+                  </span>
+                  <span class="title">Views</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sales.html">
+                  <span class="icon-holder">
+                    <i class="ri-money-dollar-box-line"></i>
+                  </span>
+                  <span class="title">Sales</span>
+                </a>
+              </li>
+              <div class="sidenav-logout w-100">
+                <img class="img-fluid" src="assets/images/others/Logout.png" />
+                <button class="btn btn-primary">
+                  <i class="ri-logout-box-line mr-2"></i>Logout
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- Side Nav END -->
+
+        <!-- Page Container START -->
+        <div class="page-container">
+          <!-- Content Wrapper START -->
+          <div class="main-content">
+            <div class="container-fluid">
+              <div
+                class="
+                  page-header
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <h2 class="header-title text-bold font-size-30">
+                  Success board
+                </h2>
+                <div class="header-buttons">
+                  <a
+                    href="success-board-add.html"
+                    class="btn btn-success text-white text-bold"
+                  >
+                    <i class="ri-add-line m-r-10"></i>Add
+                  </a>
+                </div>
+              </div>
+              <div class="card bg-gray radius-main">
+                <div class="card-body pt-0">
+                  <div class="table-overflow">
+                    <div
+                      id="dt-opt_wrapper"
+                      class="
+                        dataTables_wrapper
+                        container-fluid
+                        dt-bootstrap4
+                        no-footer
+                      "
+                    >
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <table
+                            id="dt-opt"
+                            class="
+                              table table-hover table-xl
+                              dataTable
+                              no-footer
+                              mt-0
+                            "
+                            role="grid"
+                            aria-describedby="dt-opt_info"
+                          >
+                            <thead>
+                              <tr role="row">
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="dt-opt"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Name: activate to sort column ascending"
+                                  style="width: 25%"
+                                >
+                                  Image
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="dt-opt"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Description: activate to sort column ascending"
+                                  style="width: 25%"
+                                >
+                                  Date
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="dt-opt"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label="Icon: activate to sort column ascending"
+                                  style="width: 25%"
+                                >
+                                  Time
+                                </th>
+                                <th
+                                  class="sorting"
+                                  tabindex="0"
+                                  aria-controls="dt-opt"
+                                  rowspan="1"
+                                  colspan="1"
+                                  aria-label=": activate to sort column ascending"
+                                  style="width: 25%"
+                                >
+                                  Actions
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <div class="table-media">
+                                    <img
+                                      src="assets/images/others/img-7.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    10/8/2021
+                                  </p>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    08:00 PM
+                                  </p>
+                                </td>
+                                <td class="text-center font-size-18">
+                                  <button
+                                    href=""
+                                    class="btn btn-info btn-float m-r-15"
+                                  >
+                                    <i class="ti-pencil m-r-10"></i>Edit
+                                  </button>
+                                  <button
+                                    href=""
+                                    class="
+                                      btn btn-danger btn-float
+                                      swal-function
+                                    "
+                                  >
+                                    <i class="ti-trash m-r-10"></i>Delete
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <div class="table-media">
+                                    <img
+                                      src="assets/images/others/img-7.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    10/8/2021
+                                  </p>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    08:00 PM
+                                  </p>
+                                </td>
+                                <td class="text-center font-size-18">
+                                  <button
+                                    href=""
+                                    class="btn btn-info btn-float m-r-15"
+                                  >
+                                    <i class="ti-pencil m-r-10"></i>Edit
+                                  </button>
+                                  <button
+                                    href=""
+                                    class="
+                                      btn btn-danger btn-float
+                                      swal-function
+                                    "
+                                  >
+                                    <i class="ti-trash m-r-10"></i>Delete
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <div class="table-media">
+                                    <img
+                                      src="assets/images/others/img-7.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    10/8/2021
+                                  </p>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    08:00 PM
+                                  </p>
+                                </td>
+                                <td class="text-center font-size-18">
+                                  <button
+                                    href=""
+                                    class="btn btn-info btn-float m-r-15"
+                                  >
+                                    <i class="ti-pencil m-r-10"></i>Edit
+                                  </button>
+                                  <button
+                                    href=""
+                                    class="
+                                      btn btn-danger btn-float
+                                      swal-function
+                                    "
+                                  >
+                                    <i class="ti-trash m-r-10"></i>Delete
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <div class="table-media">
+                                    <img
+                                      src="assets/images/others/img-7.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    10/8/2021
+                                  </p>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    08:00 PM
+                                  </p>
+                                </td>
+                                <td class="text-center font-size-18">
+                                  <button
+                                    href=""
+                                    class="btn btn-info btn-float m-r-15"
+                                  >
+                                    <i class="ti-pencil m-r-10"></i>Edit
+                                  </button>
+                                  <button
+                                    href=""
+                                    class="
+                                      btn btn-danger btn-float
+                                      swal-function
+                                    "
+                                  >
+                                    <i class="ti-trash m-r-10"></i>Delete
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr role="row" class="odd">
+                                <td>
+                                  <div class="table-media">
+                                    <img
+                                      src="assets/images/others/img-7.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    10/8/2021
+                                  </p>
+                                </td>
+                                <td>
+                                  <p
+                                    class="font-size-14 fonts-size-16 text-dark"
+                                  >
+                                    08:00 PM
+                                  </p>
+                                </td>
+                                <td class="text-center font-size-18">
+                                  <button
+                                    href=""
+                                    class="btn btn-info btn-float m-r-15"
+                                  >
+                                    <i class="ti-pencil m-r-10"></i>Edit
+                                  </button>
+                                  <button
+                                    href=""
+                                    class="
+                                      btn btn-danger btn-float
+                                      swal-function
+                                    "
+                                  >
+                                    <i class="ti-trash m-r-10"></i>Delete
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 col-md-5">
+                          <div
+                            class="dataTables_info"
+                            id="dt-opt_info"
+                            role="status"
+                            aria-live="polite"
+                          >
+                            Showing 1 to 10 of 12 entries
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                          <div
+                            class="
+                              dataTables_paginate
+                              paging_simple_numbers
+                              d-flex
+                              justify-content-end
+                            "
+                            id="dt-opt_paginate"
+                          >
+                            <ul class="pagination">
+                              <li
+                                class="
+                                  paginate_button
+                                  page-item
+                                  previous
+                                  disabled
+                                "
+                                id="dt-opt_previous"
+                              >
+                                <a
+                                  href="#"
+                                  aria-controls="dt-opt"
+                                  data-dt-idx="0"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >Previous</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item active">
+                                <a
+                                  href="#"
+                                  aria-controls="dt-opt"
+                                  data-dt-idx="1"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >1</a
+                                >
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a
+                                  href="#"
+                                  aria-controls="dt-opt"
+                                  data-dt-idx="2"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >2</a
+                                >
+                              </li>
+                              <li
+                                class="paginate_button page-item next"
+                                id="dt-opt_next"
+                              >
+                                <a
+                                  href="#"
+                                  aria-controls="dt-opt"
+                                  data-dt-idx="3"
+                                  tabindex="0"
+                                  class="page-link"
+                                  >Next</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Wrapper END -->
+
+          <!-- Footer START -->
+          <footer class="content-footer">
+            <div class="footer">
+              <div class="copyright">
+                <span
+                  >Copyright © 2021 <b class="text-dark">YalaPMP</b>. All rights
+                  reserved.</span
+                >
+              </div>
+            </div>
+          </footer>
+          <!-- Footer END -->
+        </div>
+        <!-- Page Container END -->
+      </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- core dependcies js -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/vendor/PACE/pace.min.js"></script>
+    <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="assets/vendor/d3/d3.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+
+    <!-- page js -->
+    <script src="assets/vendor/nouislider/distribute/nouislider.js"></script>
+    <script src="assets/vendor/sweetalert/lib/sweet-alert.js"></script>
+    <script src="assets/vendor/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+    <script src="assets/vendor/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="assets/js/components/notifications.js"></script>
+  </body>
+</html>
