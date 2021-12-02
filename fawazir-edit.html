@@ -38,6 +38,7 @@
       href="assets/vendor/sweetalert/lib/sweet-alert.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/dropzone.min.css" type="text/css" />
     <!-- core css -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/remixicon.css" rel="stylesheet" />
@@ -416,7 +417,7 @@
                   <span class="title">YALLA PMP</span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a href="fawazir.html">
                   <span class="icon-holder">
                     <i class="ri-video-line"></i>
@@ -432,7 +433,7 @@
                   <span class="title">Suggested Courses</span>
                 </a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a href="success-board.html">
                   <span class="icon-holder">
                     <i class="ri-bar-chart-box-line"></i>
@@ -504,379 +505,58 @@
                   align-items-center
                 "
               >
-                <h2 class="header-title text-bold font-size-30">
-                  Success board
-                </h2>
-                <div class="header-buttons">
-                  <a
-                    href="success-board-add.html"
-                    class="btn btn-success text-white text-bold"
-                  >
-                    <i class="ri-add-line m-r-10"></i>Add
-                  </a>
-                </div>
+                <h2 class="header-title text-bold font-size-30">Edit</h2>
+                <div class="header-buttons"></div>
               </div>
-              <div class="card bg-gray radius-main">
-                <div class="card-body pt-0">
-                  <div class="table-overflow">
-                    <div
-                      id="dt-opt_wrapper"
-                      class="
-                        dataTables_wrapper
-                        container-fluid
-                        dt-bootstrap4
-                        no-footer
-                      "
-                    >
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <table
-                            id="dt-opt"
-                            class="
-                              table table-hover table-xl
-                              dataTable
-                              no-footer
-                              mt-0
-                            "
-                            role="grid"
-                            aria-describedby="dt-opt_info"
+              <div class="card radius-main bg-gray">
+                <div class="card-body">
+                  <form name="add">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="form-group">
+                          <label class="control-label"
+                            >Upload cover image<span
+                              class="font-size-16 text-danger ml-2"
+                              >*</span
+                            ></label
                           >
-                            <thead>
-                              <tr role="row">
-                                <th
-                                  class="sorting"
-                                  tabindex="0"
-                                  aria-controls="dt-opt"
-                                  rowspan="1"
-                                  colspan="1"
-                                  aria-label="Name: activate to sort column ascending"
-                                  style="width: 25%"
-                                >
-                                  Image
-                                </th>
-                                <th
-                                  class="sorting"
-                                  tabindex="0"
-                                  aria-controls="dt-opt"
-                                  rowspan="1"
-                                  colspan="1"
-                                  aria-label="Description: activate to sort column ascending"
-                                  style="width: 25%"
-                                >
-                                  Date
-                                </th>
-                                <th
-                                  class="sorting"
-                                  tabindex="0"
-                                  aria-controls="dt-opt"
-                                  rowspan="1"
-                                  colspan="1"
-                                  aria-label="Icon: activate to sort column ascending"
-                                  style="width: 25%"
-                                >
-                                  Time
-                                </th>
-                                <th
-                                  class="sorting"
-                                  tabindex="0"
-                                  aria-controls="dt-opt"
-                                  rowspan="1"
-                                  colspan="1"
-                                  aria-label=": activate to sort column ascending"
-                                  style="width: 25%"
-                                >
-                                  Actions
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr role="row" class="odd">
-                                <td>
-                                  <div class="table-media">
-                                    <img
-                                      src="assets/images/others/img-7.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    10/8/2021
-                                  </p>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    08:00 PM
-                                  </p>
-                                </td>
-                                <td class="text-center font-size-18">
-                                  <a
-                                    href="success-board-edit.html"
-                                    class="btn btn-info btn-float m-r-15"
-                                  >
-                                    <i class="ti-pencil m-r-10"></i>Edit
-                                  </a>
-                                  <button
-                                    href=""
-                                    class="
-                                      btn btn-danger btn-float
-                                      swal-function
-                                    "
-                                  >
-                                    <i class="ti-trash m-r-10"></i>Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr role="row" class="odd">
-                                <td>
-                                  <div class="table-media">
-                                    <img
-                                      src="assets/images/others/img-7.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    10/8/2021
-                                  </p>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    08:00 PM
-                                  </p>
-                                </td>
-                                <td class="text-center font-size-18">
-                                  <a
-                                    href="success-board-edit.html"
-                                    class="btn btn-info btn-float m-r-15"
-                                  >
-                                    <i class="ti-pencil m-r-10"></i>Edit
-                                  </a>
-                                  <button
-                                    href=""
-                                    class="
-                                      btn btn-danger btn-float
-                                      swal-function
-                                    "
-                                  >
-                                    <i class="ti-trash m-r-10"></i>Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr role="row" class="odd">
-                                <td>
-                                  <div class="table-media">
-                                    <img
-                                      src="assets/images/others/img-7.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    10/8/2021
-                                  </p>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    08:00 PM
-                                  </p>
-                                </td>
-                                <td class="text-center font-size-18">
-                                  <a
-                                    href="success-board-edit.html"
-                                    class="btn btn-info btn-float m-r-15"
-                                  >
-                                    <i class="ti-pencil m-r-10"></i>Edit
-                                  </a>
-                                  <button
-                                    href=""
-                                    class="
-                                      btn btn-danger btn-float
-                                      swal-function
-                                    "
-                                  >
-                                    <i class="ti-trash m-r-10"></i>Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr role="row" class="odd">
-                                <td>
-                                  <div class="table-media">
-                                    <img
-                                      src="assets/images/others/img-7.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    10/8/2021
-                                  </p>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    08:00 PM
-                                  </p>
-                                </td>
-                                <td class="text-center font-size-18">
-                                  <a
-                                    href="success-board-edit.html"
-                                    class="btn btn-info btn-float m-r-15"
-                                  >
-                                    <i class="ti-pencil m-r-10"></i>Edit
-                                  </a>
-                                  <button
-                                    href=""
-                                    class="
-                                      btn btn-danger btn-float
-                                      swal-function
-                                    "
-                                  >
-                                    <i class="ti-trash m-r-10"></i>Delete
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr role="row" class="odd">
-                                <td>
-                                  <div class="table-media">
-                                    <img
-                                      src="assets/images/others/img-7.png"
-                                      alt=""
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    10/8/2021
-                                  </p>
-                                </td>
-                                <td>
-                                  <p
-                                    class="font-size-14 fonts-size-16 text-dark"
-                                  >
-                                    08:00 PM
-                                  </p>
-                                </td>
-                                <td class="text-center font-size-18">
-                                  <a
-                                    href="success-board-edit.html"
-                                    class="btn btn-info btn-float m-r-15"
-                                  >
-                                    <i class="ti-pencil m-r-10"></i>Edit
-                                  </a>
-                                  <button
-                                    href=""
-                                    class="
-                                      btn btn-danger btn-float
-                                      swal-function
-                                    "
-                                  >
-                                    <i class="ti-trash m-r-10"></i>Delete
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div id="dropZone" class="dropzone">
+                            <!-- <i class="ri-add-circle-fill"></i> -->
+                          </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-12 col-md-5">
-                          <div
-                            class="dataTables_info"
-                            id="dt-opt_info"
-                            role="status"
-                            aria-live="polite"
+                      <div class="col-12 col-md-8">
+                        <div class="form-group">
+                          <label class="control-label"
+                            >Video Url<span
+                              class="font-size-16 text-danger ml-2"
+                              >*</span
+                            ></label
                           >
-                            Showing 1 to 10 of 12 entries
-                          </div>
-                        </div>
-                        <div class="col-sm-12 col-md-7">
-                          <div
-                            class="
-                              dataTables_paginate
-                              paging_simple_numbers
-                              d-flex
-                              justify-content-end
-                            "
-                            id="dt-opt_paginate"
-                          >
-                            <ul class="pagination">
-                              <li
-                                class="
-                                  paginate_button
-                                  page-item
-                                  previous
-                                  disabled
-                                "
-                                id="dt-opt_previous"
-                              >
-                                <a
-                                  href="#"
-                                  aria-controls="dt-opt"
-                                  data-dt-idx="0"
-                                  tabindex="0"
-                                  class="page-link"
-                                  >Previous</a
-                                >
-                              </li>
-                              <li class="paginate_button page-item active">
-                                <a
-                                  href="#"
-                                  aria-controls="dt-opt"
-                                  data-dt-idx="1"
-                                  tabindex="0"
-                                  class="page-link"
-                                  >1</a
-                                >
-                              </li>
-                              <li class="paginate_button page-item">
-                                <a
-                                  href="#"
-                                  aria-controls="dt-opt"
-                                  data-dt-idx="2"
-                                  tabindex="0"
-                                  class="page-link"
-                                  >2</a
-                                >
-                              </li>
-                              <li
-                                class="paginate_button page-item next"
-                                id="dt-opt_next"
-                              >
-                                <a
-                                  href="#"
-                                  aria-controls="dt-opt"
-                                  data-dt-idx="3"
-                                  tabindex="0"
-                                  class="page-link"
-                                  >Next</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Add Url"
+                          />
                         </div>
                       </div>
                     </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <div class="text-right">
+                    <button
+                      id="submitBtn"
+                      class="btn btn-success btn-float btn-lg"
+                    >
+                      Submit
+                    </button>
+                    <a
+                      href="fawazir.html"
+                      class="btn btn-default text-danger btn-float btn-lg"
+                    >
+                      Cancel
+                    </a>
                   </div>
                 </div>
               </div>
@@ -917,6 +597,13 @@
     <!-- endbuild -->
 
     <!-- page js -->
+    <script src="assets/js/dropzone.min.js"></script>
+    <script>
+      let myDropzone = new Dropzone("div#dropZone", {
+        url: "/file/post",
+      });
+      Dropzone.autoDiscover = false;
+    </script>
     <script src="assets/vendor/nouislider/distribute/nouislider.js"></script>
     <script src="assets/vendor/sweetalert/lib/sweet-alert.js"></script>
     <script src="assets/vendor/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
